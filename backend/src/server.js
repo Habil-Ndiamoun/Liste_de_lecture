@@ -121,19 +121,6 @@ app.delete('/api/pieces/:id/supprimer', async(requete, reponse) => {
     );
 });
 
-
-
-
-
-
-
-
-
-
-
-
-
-
 app.listen(8000, () => console.log("Connexion réussie: Écoute le port 8000"));
 
 
