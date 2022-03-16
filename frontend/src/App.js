@@ -12,6 +12,7 @@ import PageAdmin from './pages/PageAdmin';
 import PageAjouter from './pages/PageAjouter';
 import PageModifier from './pages/PageModifier';
 import PageSupprimer from './pages/PageSupprimer';
+import PageErreur404 from './pages/PageErreur404';
 
 
 function App() {
@@ -26,7 +27,7 @@ function App() {
           <Route path="ajouter" element = {<PageAjouter />} />
           <Route path="modifier/:id" element = {<PageModifier />} />
           <Route path="supprimer/:id" element = {<PageSupprimer />} />
-          {/*<Route path="*" element = {<PageErreur404 />} />*/}
+          <Route path="*" element = {<PageErreur404 />} />
         </Routes>
       </Container>
     </Router>
