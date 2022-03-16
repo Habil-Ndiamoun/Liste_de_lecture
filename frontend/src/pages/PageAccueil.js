@@ -13,7 +13,7 @@ function PageAccueil(){
             <p></p>
             <p></p>
             <h3>Pré-requis</h3>
-            <p>Nous avons utiliser <b>ReactJs pour construire le frontend, NodeJs et ExpressJs pour construire le backend, MongoDB pour persister les données et Git pour la gestion de version.</b></p>
+            <p>Nous avons utilisé <b>ReactJs pour construire le frontend, NodeJs et ExpressJs pour construire le backend, MongoDB pour persister les données et Git pour la gestion de version.</b></p>
             <p></p>
         </>
     );

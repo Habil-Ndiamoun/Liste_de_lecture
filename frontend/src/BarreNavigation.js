@@ -12,8 +12,8 @@ function BarreNavigation(){
                 <Navbar.Collapse id="basic-navbar-nav">
                 <Nav className="me-auto">
                     <Nav.Link href="/">Accueil</Nav.Link>
-                    {/*<Nav.Link href="/a-propos">À propos</Nav.Link>  
-                    <Nav.Link href="/liste-articles">Articles</Nav.Link>
+                    <Nav.Link href="/repertoire">Repertoire</Nav.Link>  
+                    {/*<Nav.Link href="/liste-articles">Articles</Nav.Link>
                     <Nav.Link href="/autres-articles">Autres articles</Nav.Link>*/}
                 </Nav>
                 </Navbar.Collapse>

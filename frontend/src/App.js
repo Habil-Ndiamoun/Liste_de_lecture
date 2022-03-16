@@ -7,6 +7,8 @@ import {
 
 import BarreNavigation from './BarreNavigation';
 import PageAccueil from './pages/PageAccueil';
+import PageRepertoire from './pages/PageRepertoire ';
+
 
 function App() {
   return (
@@ -15,8 +17,8 @@ function App() {
         <BarreNavigation />
         <Routes>
           <Route path="/" element = {<PageAccueil />} />
-         {/* <Route path="a-propos" element = {<PageAPropos />} />
-          <Route path="liste-articles" element = {<PageListeArticles />} />
+          <Route path="repertoire" element = {<PageRepertoire />} />
+            {/* <Route path="liste-articles" element = {<PageListeArticles />} />
           <Route path="article/:nom" element = {<PageArticle />} />
           <Route path="article/:nom/ajouter-commentaire" element = {<FormulaireCommentaires />} />
           <Route path="autres-articles" element = {<ListeCommentaires commentaires={commentaires}/>} />
