@@ -68,7 +68,7 @@ app.post('/api/pieces/ajouter', async(requete, reponse) => {
 });
 
 //4. PUT /api/pieces/:id/modifier : envoie les informations pour modifier une pièce existante
-app.put('/api/pieces/:id/modifier', async(requete, reponse) =>{
+app.put('/api/pieces/modifier/:id', async(requete, reponse) =>{
     const idPiece = requete.params.id;
     const {titre, artiste, categorie} = requete.body;
 
@@ -102,7 +102,7 @@ app.put('/api/pieces/:id/modifier', async(requete, reponse) =>{
 });
 
 //5.DELETE /api/pieces/:id/supprimer : supprime une pièce du répertoire
-app.delete('/api/pieces/:id/supprimer', async(requete, reponse) => {
+app.delete('/api/pieces/supprimer/:id', async(requete, reponse) => {
     const idPiece = requete.params.id;
 
     utiliserDB(async(db) => {

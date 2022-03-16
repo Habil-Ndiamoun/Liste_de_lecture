@@ -3,29 +3,29 @@ import { Link, useNavigate } from "react-router-dom";
 
 
 function PageAjouter(){
-    const [titreF, setTitreF] = useState("");
-    const [artisteF, setArtisteF] = useState("");
-    const [categorieF, setCategorieF] = useState("");
+    const [titrePiece, setTitrePiece] = useState("");
+    const [artistePiece, setArtistePiece] = useState("");
+    const [categoriePiece, setCategoriePiece] = useState("");
 
     const optionsRequete = {
         method: 'POST',
         headers: {'Content-Type': 'application/json'},
-        body: JSON.stringify({titre: titreF, artiste: artisteF, categorie: categorieF})
+        body: JSON.stringify({titre: titrePiece, artiste: artistePiece, categorie: categoriePiece})
     };
     
 
     function handleChange(e){
         if(e.target.id === "titre")
         {
-            setArtisteF(e.taget.value);
+            setTitrePiece(e.taget.value);
         }
         else if(e.target.id === "artiste")
         {
-            setArtisteF(e.target.value);
+            setArtistePiece(e.target.value);
         }
         else if(e.target.id === "categorie")
         {
-            setCategorieF(e.target.value);
+            setCategoriePiece(e.target.value);
         }
     }
 

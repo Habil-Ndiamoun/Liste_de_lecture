@@ -10,6 +10,8 @@ import PageAccueil from './pages/PageAccueil';
 import PageRepertoire from './pages/PageRepertoire';
 import PageAdmin from './pages/PageAdmin';
 import PageAjouter from './pages/PageAjouter';
+import PageModifier from './pages/PageModifier';
+import PageSupprimer from './pages/PageSupprimer';
 
 
 function App() {
@@ -22,9 +24,9 @@ function App() {
           <Route path="repertoire" element = {<PageRepertoire />} />
           <Route path="admin" element = {<PageAdmin />} />
           <Route path="ajouter" element = {<PageAjouter />} />
-          {/* <Route path="article/:nom/ajouter-commentaire" element = {<FormulaireCommentaires />} />
-          <Route path="autres-articles" element = {<ListeCommentaires commentaires={commentaires}/>} />
-          <Route path="*" element = {<PageErreur404 />} />*/}
+          <Route path="modifier/:id" element = {<PageModifier />} />
+          <Route path="supprimer/:id" element = {<PageSupprimer />} />
+          {/*<Route path="*" element = {<PageErreur404 />} />*/}
         </Routes>
       </Container>
     </Router>
