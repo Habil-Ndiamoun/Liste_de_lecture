@@ -63,14 +63,14 @@ function PageRepertoire (){
 
     //Ou
     const chercherDonnees = async() => {
-        const resultat = await fetch('http://localhost:8000/api/pieces');
+        const resultat = await fetch('/api/pieces')
         const body = await resultat.json();
         setPieces(body);
-    }
+    };
 
     useEffect(() => {
         chercherDonnees();
-    }, []);
+    }, [pieces]);
 
     return(
         <Container>
