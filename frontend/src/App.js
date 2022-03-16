@@ -7,7 +7,9 @@ import {
 
 import BarreNavigation from './BarreNavigation';
 import PageAccueil from './pages/PageAccueil';
-import PageRepertoire from './pages/PageRepertoire ';
+import PageRepertoire from './pages/PageRepertoire';
+import PageAdmin from './pages/PageAdmin';
+import PageAjouter from './pages/PageAjouter';
 
 
 function App() {
@@ -18,9 +20,9 @@ function App() {
         <Routes>
           <Route path="/" element = {<PageAccueil />} />
           <Route path="repertoire" element = {<PageRepertoire />} />
-            {/* <Route path="liste-articles" element = {<PageListeArticles />} />
-          <Route path="article/:nom" element = {<PageArticle />} />
-          <Route path="article/:nom/ajouter-commentaire" element = {<FormulaireCommentaires />} />
+          <Route path="admin" element = {<PageAdmin />} />
+          <Route path="ajouter" element = {<PageAjouter />} />
+          {/* <Route path="article/:nom/ajouter-commentaire" element = {<FormulaireCommentaires />} />
           <Route path="autres-articles" element = {<ListeCommentaires commentaires={commentaires}/>} />
           <Route path="*" element = {<PageErreur404 />} />*/}
         </Routes>

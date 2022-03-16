@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import Container from 'react-bootstrap/Container';
 import Row from 'react-bootstrap/Row';
+import Alert from 'react-bootstrap/Alert';
 import Table from 'react-bootstrap/Table';
 import repertoire from '../repertoire';
 
@@ -62,7 +63,7 @@ function PageRepertoire (){
 
     //Ou
     const chercherDonnees = async() => {
-        const resultat = await fetch('/api/pieces');
+        const resultat = await fetch('http://localhost:8000/api/pieces');
         const body = await resultat.json();
         setPieces(body);
     }
@@ -73,10 +74,15 @@ function PageRepertoire (){
 
     return(
         <Container>
+            <Alert  variant="primary">
+                <h1>Répertoire</h1>
+            </Alert>
+
             <Row>
                 <Repertoire repertoire={repertoire} />
             </Row>
         </Container>
     );
 }
+
 export default PageRepertoire ;

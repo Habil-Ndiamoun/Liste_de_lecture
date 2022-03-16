@@ -13,8 +13,7 @@ function BarreNavigation(){
                 <Nav className="me-auto">
                     <Nav.Link href="/">Accueil</Nav.Link>
                     <Nav.Link href="/repertoire">Repertoire</Nav.Link>  
-                    {/*<Nav.Link href="/liste-articles">Articles</Nav.Link>
-                    <Nav.Link href="/autres-articles">Autres articles</Nav.Link>*/}
+                    <Nav.Link href="/admin">Administrateur</Nav.Link>
                 </Nav>
                 </Navbar.Collapse>
             </Container>
